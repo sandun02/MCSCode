@@ -7,19 +7,19 @@ import { RiVipCrownFill } from "react-icons/ri";
 
 const skillsData = [
   {
-    name: "App Development",
+    name: "WebSite Design & Development",
     icon: <RiTerminalBoxFill className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "We help your business grow by designing custom web apps with attractive designs and rich functionality. Our approach includes building a strong infrastructure, ensuring seamless user interactions, optimizing performance, and providing ongoing support. We use thorough market research and the latest technologies to deliver solutions that exceed your business objectives.",
     aosDelay: "0",
   },
   {
-    name: "Web Designing",
+    name: "Desktop App Development",
     icon: <GiNotebook className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "We develop tailored desktop applications to meet your business needs, featuring intuitive interfaces, seamless system integration, and robust security. Our focus on performance and reliability enhances productivity and streamlines operations. We ensure thorough testing, user training, and ongoing maintenance, leveraging the latest technologies and best practices to empower your business and achieve its goals.",
     aosDelay: "300",
   },
   {
@@ -27,15 +27,15 @@ const skillsData = [
     icon: <RiVipCrownFill className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "Logo design creates a unique symbol representing a brand, focusing on instant recognition and conveying its essence and values. A good logo is simple, versatile, scalable, and consistent with the brand’s visual language, enhancing recognition and trust. It involves collaboration to ensure alignment with the brand’s goals and vision.",
     aosDelay: "500",
   },
   {
-    name: "Fb Post Designing",
+    name: "Fb Bisiness Post Designing",
     icon: <RiWindowFill className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "Designing a Facebook post involves creating visually appealing, engaging content with high-quality images, compelling headlines, and relevant information. Key considerations include maintaining brand identity, optimizing for mobile, including clear calls to action, and encouraging interaction. Analyzing performance metrics and adjusting strategies based on insights can further enhance effectiveness.",
     aosDelay: "700",
   },
 ];
@@ -73,7 +73,7 @@ const Services = () => {
               >
                 <div>{skill.icon}</div>
                 <h1 className="text-lg font-semibold">{skill.name}</h1>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-gray-600 dark:text-gray-400 text-justify">
                   {skill.description}
                 </p>
               </div>
@@ -87,7 +87,9 @@ const Services = () => {
             data-aos-offset="0"
             className="text-center mt-4 sm:mt-8"
           >
+            <a href="/services">
             <button className="primary-btn">Learn More</button>
+            </a>
           </div>
         </div>
       </div>

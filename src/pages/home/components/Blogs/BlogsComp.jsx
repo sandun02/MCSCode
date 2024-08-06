@@ -1,36 +1,39 @@
 import React from "react";
 import BlogCard from "./BlogCard";
-import Img1 from "@/assets/blog/blog1.png";
-import Img2 from "@/assets/blog/blog2.png";
-import Img3 from "@/assets/blog/blog3.png";
+import RImg1 from "@/assets/Projects/RHome2.png";
+import WImg1 from "@/assets/Projects/WHome.png";
+import VImg1 from "@/assets/Projects/VHome.png";
 
 const BlogsData = [
   {
     id: 1,
-    image: Img1,
-    title: "Realtime analytics",
+    image: RImg1,
+    title: "RunVista - Car rental service platform",
     description:
-      "“The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be. “The results have been incredible.",
-    author: "Someone",
-    date: "April 22, 2022",
+      "RunVista is an innovative car rental service platform designed to offer seamless experiences for both users and administrators. Users can easily log in to the platform using their credentials, allowing them to access a wide range of features. Once logged in, users can browse available cars using a sophisticated filter function, enabling them to find the perfect vehicle based on criteria such as make, model, year, and rental rates. Booking a car is a straightforward process, with users able to select their desired vehicle, choose rental dates, and complete the reservation in just a few clicks. Additionally, users can view their booking history, providing a convenient way to track past rentals and manage future reservations.The platform also includes a Contact Us page, where users can reach out to administrators for assistance, inquiries, or feedback. This ensures that users receive the support they need, enhancing overall customer satisfaction. For administrators, RunVista offers robust management tools to efficiently oversee the rental operations. Admins can log in to access their dashboard, where they can add new cars to the inventory, update existing car details, and delete cars that are no longer available for rental. Administrators can also view all user bookings, enabling them to monitor rental trends, manage reservations, and generate insightful reports.Furthermore, RunVista incorporates secure payment processing, allowing users to complete transactions with confidence. The platform's architecture leverages modern web technologies such as React for the frontend, Node.js for the backend, and MongoDB for data storage, ensuring a responsive, scalable, and reliable service. The integration of advanced features like real-time availability updates, user authentication, and data encryption underscores RunVista's commitment to providing a secure and user-friendly car rental experience.",
+      author: "Sandun",
+      date: "April 22, 2024",
+      
   },
   {
     id: 2,
-    image: Img2,
-    title: "Realtime analytics",
+    image: WImg1,
+    title: "WaveAI - Job hiring Website",
     description:
-      "“The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be. “The results have been incredible. ",
-    author: "Someone",
-    date: "April 22, 2022",
+      "This AI-powered job hiring site using the MERN stack. Recruiters can post jobs and related questions, while candidates can view and answer these questions. A fine-tuned AI model analyzes the responses, categorizing them into good, moderate, and bad, which are then displayed to recruiters. The platform employs robust authentication and authorization processes to ensure security and privacy. This system streamlines the hiring process by providing recruiters with a quick assessment of candidates' suitability based on their answers.",
+    author: "Sandun ",
+    date: "July 22, 2024",
+    
   },
   {
     id: 3,
-    image: Img3,
-    title: "Realtime analytics",
+    image: VImg1,
+    title: "VentureVista - Travel Agency WebSite",
     description:
-      "“The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be. “The results have been incredible. ",
+      "VentureVista is a comprehensive travel agency website designed to cater to travelers seeking a wide range of travel services and information. Created with the modern traveler in mind, VentureVista offers a seamless platform for booking various travel services, from flights and accommodations to tours and activities. Users can easily browse and view detailed travel packages, which include curated itineraries, exclusive deals, and destination highlights, ensuring they find the perfect travel experience tailored to their preferences and budget. The platform also facilitates efficient user-admin communication through a dedicated Contact Us page, allowing travelers to reach out for personalized assistance, inquiries, and support.To enhance user experience, VentureVista incorporates advanced search and filtering options, enabling travelers to find exactly what they are looking for with ease. The platform's user-friendly interface ensures smooth navigation, while secure payment processing guarantees safe transactions for all bookings. Administrators can manage travel packages, update information, and respond to user queries efficiently through an intuitive admin dashboard. Additionally, VentureVista features user reviews and ratings for travel packages, providing valuable insights and helping users make informed decisions. Built using state-of-the-art web technologies, VentureVista promises a reliable, responsive, and engaging travel planning experience, making it an indispensable tool for all travel enthusiasts.",
     author: "Someone",
     date: "April 22, 2022",
+    
   },
 ];
 
@@ -53,7 +56,9 @@ const BlogsComp = () => {
             ))}
           </div>
           <div className="text-center">
+            <a href="/projects">
             <button className="primary-btn">View All Projects</button>
+            </a>
           </div>
         </section>
       </div>

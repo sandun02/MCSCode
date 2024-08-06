@@ -6,7 +6,7 @@ import logo4 from "@/assets/Features/f4.png";
 import logo5 from "@/assets/Features/f5.png";
 import logo6 from "@/assets/Features/f6.png";
 import image1 from "@/assets/Features/fb11.png";
-import image2 from "@/assets/Features/fb22.png";
+import image2 from "@/assets/Features/fbp22.png";
 import { inView, useAnimation, useInView, motion } from "framer-motion";
 
 const Features = () => {
@@ -108,7 +108,7 @@ const Features = () => {
                       <img
                         src={image1}
                         alt="image1"
-                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
+                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-3xl shadow-lg dark:bg-gray-500"
                       />
                     </div>
                   </div>
@@ -183,7 +183,7 @@ const Features = () => {
                       <img
                         src={image2}
                         alt="image2"
-                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
+                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-3xl shadow-lg dark:bg-gray-500"
                       />
                     </div>
                   </div>
@@ -313,7 +313,7 @@ const Features = () => {
                       <img
                         src={image1}
                         alt="image1"
-                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
+                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-3xl shadow-lg dark:bg-gray-500"
                       />
                     </motion.div>
                   </div>
@@ -428,7 +428,7 @@ const Features = () => {
                       <img
                         src={image2}
                         alt="image2"
-                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
+                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-3xl shadow-lg dark:bg-gray-500"
                       />
                     </motion.div>
                   </div>

@@ -39,7 +39,7 @@ const CardComponent = () => {
                     Package={"Growth Package"}
                     Price={"LKR 10,000"}
                     Feature1={"Just pay 6,000 to start"}
-                    Feature2={"Domain Name & Web Hosting"}
+                    Feature2={"Web Hosting"}
                     Feature3={"12 Months Free Support"}
                     Feature4={"Upto 5 pages included"}
                     Feature5={"Ecommerce Web app"}
@@ -106,106 +106,7 @@ const CardComponent = () => {
               </div>
             </>
           
-            <>
-              <div className="max-w-[1240px] mx-auto grid sm:grid-cols-3 gap-8">
-                <motion.div
-                  ref={ref}
-                  variants={{
-                    hidden: { opacity: 0, y: 75 },
-                    visible: { opacity: 1, y: 0 },
-                  }}
-                  initial="hidden"
-                  animate={mainControlls}
-                  transition={{ duration: 0.5, delay: 0.25 }}
-                >
-                  <Card
-                    image={image1}
-                    Package={"Growth Package"}
-                    Price={"LKR 10,000"}
-                    Feature1={"Just pay 6,000 to start"}
-                    Feature2={"Domain Name & Web Hosting"}
-                    Feature3={"12 Months Free Support"}
-                    Feature4={"Upto 5 pages included"}
-                    Feature5={"Ecommerce Web app"}
-                    Feature6={"Payment Gateway"}
-                    
-                    iconColor1={"text-green-500"}
-                    iconColor2={"text-green-500"}
-                    iconColor3={"text-green-500"}
-                    iconColor4={"text-green-500"}
-                    iconColor5={"text-green-300"}
-                    iconColor6={"text-green-300"}
-                    buttonBg={"bg-gray-300"}
-                    hoverBgButton={"hover:bg-gray-200"}
-                  />
-                </motion.div>
-                <motion.div
-                  ref={ref}
-                  variants={{
-                    hidden: { opacity: 0, y: 75 },
-                    visible: { opacity: 1, y: 0 },
-                  }}
-                  initial="hidden"
-                  animate={mainControlls}
-                  transition={{ duration: 0.5, delay: 0.65 }}
-                >
-                  <Card
-                    image={image2}
-                    Package={"Standard Package"}
-                    Price={"LKR 20,000"}
-                    Feature1={"Just pay 6,000 to start"}
-                    Feature2={"Domain Name & Web Hosting"}
-                    Feature3={"12 Months Free Support"}
-                    Feature4={"Upto 10 pages included"}
-                    Feature5={"Ecommerce Web app"}
-                    Feature6={"Payment Gateway"}
-                    
-                    iconColor1={"text-green-500"}
-                    iconColor2={"text-green-500"}
-                    iconColor3={"text-green-500"}
-                    iconColor4={"text-green-500"}
-                    iconColor5={"text-green-500"}
-                    iconColor6={"text-green-300"}
-                    buttonBg={"bg-primary/80"}
-                    hoverBgButton={"hover:bg-green-500"}
-                    buttonTextColor={"text-white"}
-                    standOutBg={"bg-blue-100/30"}
-                    marginMiddle={"md:my-6"}
-                  />
-                </motion.div>
-                <motion.div
-                  ref={ref}
-                  variants={{
-                    hidden: { opacity: 0, y: 75 },
-                    visible: { opacity: 1, y: 0 },
-                  }}
-                  initial="hidden"
-                  animate={mainControlls}
-                  transition={{ duration: 0.5, delay: 0.25 }}
-                >
-                  <Card
-                    image={image3}
-                    Package={"Enterprise Package"}
-                    Price={"LKR 40,000"}
-                    Feature1={"Just pay 6,000 to start"}
-                    Feature2={"Domain Name & Web Hosting"}
-                    Feature3={"12 Months Free Support"}
-                    Feature4={"Upto 20 pages included"}
-                    Feature5={"Ecommerce Web app"}
-                    Feature6={"Payment Gateway"}
-                    
-                    iconColor1={"text-green-500"}
-                    iconColor2={"text-green-500"}
-                    iconColor3={"text-green-500"}
-                    iconColor4={"text-green-500"}
-                    iconColor5={"text-green-500"}
-                    iconColor6={"text-green-500"}
-                    buttonBg={"bg-gray-300"}
-                    hoverBgButton={"hover:bg-gray-200"}
-                  />
-                </motion.div>
-              </div>
-            </>
+            
          
         </>
 

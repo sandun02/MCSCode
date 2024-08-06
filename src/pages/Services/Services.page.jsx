@@ -189,7 +189,7 @@ const Services = () => {
               className="sm:hidden -mt-10 block w-full h-96 object-cover  absolute z-0"
             />
             <div className="shadow-lg xl:p-6 p-4 sm:w-auto w-full bg-white sm:absolute relative z-20  mt-4 left-0 xl:ml-56 sm:ml-12 xl:-mt-40 sm:-mt-12">
-              <p className="text-3xl font-semibold text-gray-800">100+</p>
+              <p className="text-3xl font-semibold text-gray-800">10+</p>
               <p className="text-base leading-4 xl:mt-4 mt-2 text-gray-600">
                 Companies Helped
               </p>

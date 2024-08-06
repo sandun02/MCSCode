@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+
 
 
 const ContactUs = () => {
+
+ 
+
+  const form = useRef()
+
+  const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_82mgeoc', 'template_dbuss8b', form.current, {
+          publicKey: 'ixM_vk4C-RdM4KjTa',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+        e.target.reset()
+        
+    };
   return (
     <div>
       
@@ -18,11 +43,8 @@ const ContactUs = () => {
                   <h2 class="text-black mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                     GET IN TOUCH WITH US
                   </h2>
-                  <p class="text-gray-700 mb-9 text-base leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eius tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim adiqua minim veniam quis nostrud exercitation
-                    ullamco
+                  <p class="text-gray-700 mb-9 text-base leading-relaxed text-justify">
+                  The contact page is your direct line to us, where you can reach out with questions, feedback, or inquiries. It provides our email, phone number, and address details for easy access. Additionally, you can use the convenient contact form to send a quick message. We’re here to connect and assist you with any needs. This page may also include social media links, office hours, and a map for directions to our location, ensuring multiple ways to get in touch and enhancing your communication experience with us.
                   </p>
                   <div class="mb-8 flex w-full max-w-[370px]">
                     <div class="bg-blue-400/20 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded  sm:h-[70px] sm:max-w-[70px]">
@@ -82,7 +104,7 @@ const ContactUs = () => {
                         Email Address
                       </h4>
                       <p class="text-body-color text-base">
-                        MCSCode@gmail.com
+                        cmscode@gmail.com
                       </p>
                     </div>
                   </div>
@@ -90,11 +112,12 @@ const ContactUs = () => {
               </div>
               <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
                 <div class="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
-                  <form>
+                  <form ref={form} onSubmit={sendEmail}>
                     <div class="mb-6">
                       <input
                         type="text"
                         placeholder="Your Name"
+                        name="user_name" required
                         class="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                       />
                     </div>
@@ -102,18 +125,21 @@ const ContactUs = () => {
                       <input
                         type="email"
                         placeholder="Your Email"
+                        name="user_email" required
                         class="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                       />
                     </div>
                     <div class="mb-6">
                       <input
                         type="text"
-                        placeholder="Your Phone"
+                        placeholder="Type of Service Required "
+                        name="subject" required
                         class="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                       />
                     </div>
                     <div class="mb-6">
                       <textarea
+                        name="message"
                         rows="6"
                         placeholder="Your Message"
                         class="text-body-color border-[f0f0f0] focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
@@ -952,42 +978,42 @@ const ContactUs = () => {
               <div class="flex flex-wrap items-center justify-center">
                 <a
                   href="javascript:void(0)"
-                  class="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
+                  class="mx-5 flex w-[150px] items-center justify-center py-15 2xl:w-[180px]"
                 >
                   <img
-                    src="https://cdn.tailgrids.com/2.0/image/assets/images/brands/graygrids.svg"
+                    src="https://i.pinimg.com/564x/96/83/be/9683be95791ff3429886d65ad73e58cd.jpg"
                     alt="image"
-                    class="h-10 w-full"
+                    class="h-40 w-full"
                   />
                 </a>
                 <a
                   href="javascript:void(0)"
-                  class="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
+                  class="mx-4 flex w-[150px] items-center justify-center py-15 2xl:w-[180px]"
                 >
                   <img
-                    src="https://cdn.tailgrids.com/2.0/image/assets/images/brands/lineicons.svg"
+                    src="https://i.pinimg.com/564x/68/ce/21/68ce21de7e2d62a80be528b3550982b6.jpg"
                     alt="image"
-                    class="h-10 w-full"
+                    class="h-40 w-full"
                   />
                 </a>
                 <a
                   href="javascript:void(0)"
-                  class="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
+                  class="mx-4 flex w-[150px] items-center justify-center py-15 2xl:w-[180px]"
                 >
                   <img
-                    src="https://cdn.tailgrids.com/2.0/image/assets/images/brands/uideck.svg"
+                    src="https://i.pinimg.com/564x/61/cb/13/61cb13808e83c6cddf42f72841c26fe1.jpg"
                     alt="image"
-                    class="h-10 w-full"
+                    class="h-40 w-full"
                   />
                 </a>
                 <a
                   href="javascript:void(0)"
-                  class="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
+                  class="mx-4 flex w-[150px] items-center justify-center py-15 2xl:w-[180px]"
                 >
                   <img
-                    src="https://cdn.tailgrids.com/2.0/image/assets/images/brands/ayroui.svg"
+                    src="https://i.pinimg.com/564x/f2/2e/6a/f22e6a81ea3a7ea568147bd88b8ae7d0.jpg"
                     alt="image"
-                    class="h-10 w-full"
+                    class="h-40 w-full"
                   />
                 </a>
               </div>
@@ -1010,8 +1036,7 @@ const ContactUs = () => {
                   Our Recent News
                 </h2>
                 <p class="text-body-color text-base">
-                  There are many variations of passages of Lorem Ipsum available
-                  but the majority have suffered alteration in some form.
+                Our Recent News page offers the latest updates on our organization and industry, including new product launches, company milestones, industry trends, and community involvement. Stay informed about our projects, events, and initiatives to stay connected and up-to-date with important information.
                 </p>
               </div>
             </div>
@@ -1021,7 +1046,7 @@ const ContactUs = () => {
               <div class="mx-auto mb-10 max-w-[370px]">
                 <div class="mb-8 overflow-hidden rounded">
                   <img
-                    src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-01.jpg"
+                    src="https://i.pinimg.com/564x/5b/fb/47/5bfb47d407999c7ff73bd5e65f9921b1.jpg"
                     alt="image"
                     class="w-full"
                   />
@@ -1035,12 +1060,11 @@ const ContactUs = () => {
                       href="javascript:void(0)"
                       class="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
                     >
-                      Meet AutoManage, the best AI management tools
+                      Why You Need a Custom Software Development Company
                     </a>
                   </h3>
                   <p class="text-body-color text-base">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                  Every day, businesses of all types depend on custom software solutions to get things done. They use dedicated apps to not only communicate and collaborate among employees, but to ...
                   </p>
                 </div>
               </div>
@@ -1049,26 +1073,25 @@ const ContactUs = () => {
               <div class="mx-auto mb-10 max-w-[370px]">
                 <div class="mb-8 overflow-hidden rounded">
                   <img
-                    src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-02.jpg"
+                    src="https://i.pinimg.com/564x/c6/bc/7f/c6bc7f0257bb06cf67f214a96b03d8a6.jpg"
                     alt="image"
                     class="w-full"
                   />
                 </div>
                 <div>
                   <span class="bg-blue-400/80 mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">
-                    Mar 15, 2023
+                    Mar 15, 2024
                   </span>
                   <h3>
                     <a
                       href="javascript:void(0)"
                       class="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
                     >
-                      How to earn more money as a wellness coach
+                      Why .NET Core Web Applications are Better Than Spreadsheets for Managing Data
                     </a>
                   </h3>
                   <p class="text-body-color text-base">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                  Web applications offer a number of advantages over traditional spreadsheet-based data management systems. First, the obvious: web applications are much more scalable and can ...
                   </p>
                 </div>
               </div>
@@ -1077,26 +1100,25 @@ const ContactUs = () => {
               <div class="mx-auto mb-10 max-w-[370px]">
                 <div class="mb-8 overflow-hidden rounded">
                   <img
-                    src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-03.jpg"
+                    src="https://i.pinimg.com/564x/63/85/b1/6385b13c18dd90e3efdec5e79bd704b0.jpg"
                     alt="image"
                     class="w-full"
                   />
                 </div>
                 <div>
                   <span class="bg-blue-400/80 mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">
-                    Jan 05, 2023
+                    Jan 05, 2024
                   </span>
                   <h3>
                     <a
                       href="javascript:void(0)"
                       class="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
                     >
-                      The no-fuss guide to upselling and cross selling
+                      Full Stack Development: What It Is and Why It Matters for Every Business
                     </a>
                   </h3>
                   <p class="text-body-color text-base">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                  Regardless of the industry that you're talking about, any organization that looks to either develop or outsource the creation of a new business software system must make every ...
                   </p>
                 </div>
               </div>

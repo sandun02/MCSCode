@@ -5,6 +5,8 @@ import Logo from "@/assets/website/logo7.png";
 import DarkMode from "./DarkMode";
 import { Link } from "react-router-dom";
 
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+
 export const MenuLinks = [
   {
     id: 1,
@@ -19,7 +21,7 @@ export const MenuLinks = [
   {
     id: 3,
     name: "Projects",
-    link: "/#projects",
+    link: "/projects",
   },
   {
     id: 4,
@@ -52,7 +54,7 @@ const Navbar = () => {
           >
             <img src={Logo} alt="" className="w-20" />
             <span className="text-2xl sm:text-3xl font-semibold ">
-            <Link to={"/"} >CMSCode </Link>
+            <Link to={"/"} >CMScodex </Link>
             </span>
           </a>
           {/* Desktop view Navigation */}
@@ -68,12 +70,19 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <button className="primary-btn">
+              <SignedIn>
+              <UserButton />
+              </SignedIn>
+              <SignedOut>
+              <div className="flex gap-x-4 items-center">
+              <button asChild className="primary-btn">
               <Link to={"/sign-in"}>Sign In</Link>
               </button>
-              <button className="primary-btn">
+              <button asChild className="primary-btn">
               <Link to={"/sign-up"}>Sign Up</Link>
               </button>
+          </div>
+        </SignedOut>
               <DarkMode /> 
             </ul>
           </nav>

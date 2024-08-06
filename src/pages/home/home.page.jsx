@@ -22,10 +22,11 @@ function HomePage() {
     return(
         <div>
            <Hero/> 
-           <BrandsLogo/>
+          
            <Services/>
            <BlogsComp/>
            <CardComponent/>
+           <BrandsLogo/>  
            <Testimonial/>
         </div>
 

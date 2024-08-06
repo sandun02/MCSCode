@@ -1,14 +1,17 @@
 import React, { useEffect, useRef } from "react";
 
 import { useAnimation, useInView, motion } from "framer-motion";
-import TeamImage from '@/assets/Team/team1.png'
-import TeamMember1 from "@/assets/Team/teamMember1.jpeg";
+
+import TeamMember1 from "@/assets/Team/sandun.jpeg";
+import TeamMember3 from "@/assets/Team/migara.png";
 import {VscGithubAlt} from 'react-icons/vsc'
 import {TfiTwitter} from 'react-icons/tfi'
 import {RxInstagramLogo} from 'react-icons/rx'
 
-const About = () => {
-   
+
+function About (){
+
+
   return (
     <div>
       <div className="max-w-screen overflow-hidden font-poppins">
@@ -190,7 +193,7 @@ const About = () => {
                     <div className="absolute -mt-20 w-full flex justify-center">
                       <div className="h-32 w-32">
                         <img
-                          src="https://cdn.tuk.dev/assets/photo-1570211776045-af3a51026f4a.jfif"
+                          src={TeamMember3}
                           alt="alt"
                           className="rounded-full object-cover h-full w-full shadow-md"
                         />
@@ -249,5 +252,7 @@ const About = () => {
     </div>
   );
 };
+
+
 
 export default About;

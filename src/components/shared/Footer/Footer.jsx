@@ -9,10 +9,10 @@ const Footer = () => {
       <div className="sm:flex justify-between py-10 px-8 grid bg-gray-900">
         <div className="text-white">
           <h1 className="w-full text-3xl font-bold cursor-pointer text-blue-400">
-          MCSCode | Your Vision , Our Code 
+          CMScodex | Your Vision , Our Code 
           </h1>
           <p className="py-4">
-            Welcome to MCSCode, where we transform raw information
+            Welcome to CMScodex, where we transform raw information
             into actionable insights. With cutting-edge technology and a team of
             skilled analysts, we specialize in deciphering complex data sets to
             uncover valuable patterns and trends with which wee take your
@@ -44,8 +44,9 @@ const Footer = () => {
                 placeholder="Enter Your E-Mail"
               />
               <button className="bg-blue-400 mx-auto w-28 hover:bg-blue-500 rounded-md font-medium">
-                Sign UP
+              <a href='/contact'>Sign UP</a> 
               </button>
+              
             </div>
             <p className="text-sm mx-10 flex-col text-center pt-4">
               We always care about the protection of your data. Read our {" "}
@@ -80,30 +81,31 @@ const Footer = () => {
             <h6 className="font-medium text-blue-400">Quick Links</h6>
             <ul>
               <li className="py-2 text-sm cursor-pointer font-semibold">
-                Home
+              <a href='/#'>Home</a>
               </li>
               <li className="py-2 text-sm cursor-pointer font-semibold">
-                Services
+              <a href='/services'>Services</a>
               </li>
               <li className="py-2 text-sm cursor-pointer font-semibold">
-                Portfolio
+              <a href='/projects'>Portfolio</a>
               </li>
               <li className="py-2 text-sm cursor-pointer font-semibold">
-                About Us</li>
+              <a href='/about'>About Us</a> 
+                </li>
               <li className="py-2 text-sm cursor-pointer font-semibold">
-                Contact</li>
+              <a href='/contact'>Contact</a>   </li>
               <li className="py-2 text-sm cursor-pointer font-semibold">
-                Blog Page</li>    
+              <a href='/contact'>Blog Page</a> </li>    
             </ul>
           </div>
           <div className="pr-4">
             <h6 className="font-medium text-blue-400">Company</h6>
             <ul>
               <li className="py-2 text-sm cursor-pointer font-semibold">
-                 MCSCode FB Page
+                 CMScodex FB Page
               </li>
               <li className="py-2 text-sm cursor-pointer font-semibold">
-                MCSCode YouTube Page
+                CMScodex YouTube Page
               </li>
               <li className="py-2 text-sm cursor-pointer font-semibold">
                 +(94) 71 568 6673
@@ -112,7 +114,7 @@ const Footer = () => {
                 Contact Us
               </li>
               <li className="py-2 text-sm cursor-pointer font-semibold">
-                MCSCode@gmail.com
+                cmscodex@gmail.com
               </li>
             </ul>
           </div>
@@ -135,7 +137,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="h-[1px] bg-gray-100/20 w-[100rem] ml-[-20rem]"></div>
-        <p className='pt-4 text-gray-200/40 text-sm flex justify-center text-center'>All Rights Reserved 2023 - MCSCode</p>
+        <p className='pt-4 text-gray-200/40 text-sm flex justify-center text-center'>All Rights Reserved 2024 - CMScodex</p>
       </div>
       {/* footer bottom section with links */}
       <div></div>

@@ -1,5 +1,5 @@
 import React from "react";
-import yellowCar from "@/assets/website/team.png";
+import yellowCar from "@/assets/website/team2.png";
 
 const Hero = () => {
   return (
@@ -7,11 +7,11 @@ const Hero = () => {
       <div className="container min-h-[620px] flex mt-10 sm:mt-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
           {/* Image section */}
-          <div data-aos="zoom-in" className="order-1 sm:order-2 relative">
+          <div data-aos="zoom-in" className="order-1 sm:order-2 relative ">
             <img
               src={yellowCar}
               alt=""
-              className="w-full sm:max-w-[280px] md:max-w-[430px]"
+              className="w-full sm:max-w-[280px] md:max-w-[430px] rounded-3xl"
             />
             <div
               data-aos="slide-right"
@@ -19,7 +19,7 @@ const Hero = () => {
             >
               <p className="text-gray-500 text-sm ">⭐Projects</p>
               <h1 className="font-bold">
-                100+ <span className="font-normal">Done</span>
+                10+ <span className="font-normal">Done</span>
               </h1>
             </div>
           </div>
@@ -40,6 +40,8 @@ const Hero = () => {
              and understanding your needs before development begins. Together, we identify your goals and 
              leverage our expertise to craft solutions that are both practical and impactful.
             </p>
+            <a href="/contact">
+            <br/>
             <button
               data-aos="fade-up"
               data-aos-delay="500"
@@ -48,6 +50,7 @@ const Hero = () => {
             >
               Get Started
             </button>
+            </a>
           </div>
         </div>
       </div>
