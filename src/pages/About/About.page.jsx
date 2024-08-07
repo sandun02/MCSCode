@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from "react";
 
 import { useAnimation, useInView, motion } from "framer-motion";
 
-import TeamMember1 from "@/assets/Team/sandun.jpeg";
+import TeamMember1 from "@/assets/Team/sandun.png";
+import TeamMember2 from "@/assets/Team/nimesh.png";
 import TeamMember3 from "@/assets/Team/migara.png";
 import {VscGithubAlt} from 'react-icons/vsc'
 import {TfiTwitter} from 'react-icons/tfi'
@@ -141,7 +142,7 @@ function About (){
                     <div className="absolute -mt-20 w-full flex justify-center">
                       <div className="h-32 w-32">
                         <img
-                          src="https://cdn.tuk.dev/assets/blond-man-happy-expression_1194-2873.jpg"
+                          src={TeamMember2}
                           alt="alt"
                           className="rounded-full object-cover h-full w-full shadow-md"
                         />
