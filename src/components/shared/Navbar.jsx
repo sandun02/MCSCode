@@ -52,7 +52,7 @@ const Navbar = () => {
             href="YouTube Channel Link"
             className="flex items-center gap-1"
           >
-            <img src={Logo} alt="" className="w-20" />
+            <img src={Logo} alt="" className="w-16" />
             <span className="text-2xl sm:text-3xl font-semibold m-2">
             <Link to={"/"} >CMScodex </Link>
             </span>
