@@ -32,7 +32,7 @@ function About (){
                   </h1>
                   <p
                     tabIndex={0}
-                    className="sm:flex border-y-2 py-4 border-y-indigo-900/30 font-semibold sm:ml-[7%] w-[70%] "
+                    className="sm:flex border-y-2 py-4 border-y-indigo-900/30 font-semibold sm:ml-[7%] w-[70%] text-justify"
                   >
                     Welcome to our site, where we specialize in empowering
                 businesses to unlock their true potential and achieve
