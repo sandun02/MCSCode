@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
-import Logo from "@/assets/website/logo7.png";
+import Logo from "@/assets/website/logo8.png";
 import DarkMode from "./DarkMode";
 import { Link } from "react-router-dom";
 
@@ -42,7 +42,7 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <div className="relative z-10 w-full dark:bg-black dark:text-white duration-300">
+    <div className="relative z-10 w-full dark:bg-black dark:text-white duration-300 ">
 
       <div className="container py-3 md:py-2">
         <div className="flex justify-between items-center">
@@ -53,7 +53,7 @@ const Navbar = () => {
             className="flex items-center gap-1"
           >
             <img src={Logo} alt="" className="w-20" />
-            <span className="text-2xl sm:text-3xl font-semibold ">
+            <span className="text-2xl sm:text-3xl font-semibold m-2">
             <Link to={"/"} >CMScodex </Link>
             </span>
           </a>
